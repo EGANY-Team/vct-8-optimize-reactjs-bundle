@@ -1,8 +1,8 @@
-# Vọc cùng Thành #8 - Chưa có tên
+# Vọc cùng Thành #8 - Optimize Reactjs bundle
 
 ## Giới thiệu
 
-Đây là demo cho bài viết [Vọc cùng Thành #8 - Chưa có tên][post].
+Đây là demo cho bài viết [Vọc cùng Thành #8 - Optimize Reactjs bundle][post].
 
 Chi tiết setup, cách optimize cũng như source code vui lòng xem trong bài viết.
 
@@ -34,5 +34,5 @@ function optimizeReactApp(myApp) {
 
 [marked]: https://marked.js.org
 [highlight]: https://highlightjs.org
-[post]: https://devnow.vn
+[post]: https://devnow.vn/?p=3077
 [create-react-app]: https://github.com/facebook/create-react-app
