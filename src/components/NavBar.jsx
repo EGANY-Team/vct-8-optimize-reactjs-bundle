@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faGrinTears } from "@fortawesome/free-solid-svg-icons";
+// import { faHome, faGrinTears } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons/faHome";
+import { faGrinTears } from "@fortawesome/free-solid-svg-icons/faGrinTears";
 
 import styles from "./NavBar.module.css";
 

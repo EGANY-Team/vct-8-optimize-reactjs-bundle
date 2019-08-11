@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import _ from "lodash";
-import { faCog, faGrinTears } from "@fortawesome/free-solid-svg-icons";
+// import _ from "lodash";
+import _random from "lodash/random";
+// import { faCog, faGrinTears } from "@fortawesome/free-solid-svg-icons";
+import { faCog } from "@fortawesome/free-solid-svg-icons/faCog";
+import { faGrinTears } from "@fortawesome/free-solid-svg-icons/faGrinTears";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./Cowsay.module.css";
@@ -16,7 +19,8 @@ const Cowsay = () => {
 
     let timer = setTimeout(() => {
       toggleLoading(true);
-      fetch(`${API_URL}/cowsay?text=${msg}&eyes=${EYES[_.random(0, 2, false)]}`)
+      // fetch(`${API_URL}/cowsay?text=${msg}&eyes=${EYES[_.random(0, 2, false)]}`)
+      fetch(`${API_URL}/cowsay?text=${msg}&eyes=${EYES[_random(0, 2, false)]}`)
         .then(r => r.text())
         .then(text => {
           toggleLoading(false);
