@@ -1,0 +1,14 @@
+.appMarkdownOveride a {
+  text-decoration: none;
+  color: teal;
+}
+
+.appMarkdownOveride a:hover {
+  opacity: 0.6;
+}
+
+.appMarkdownOveride pre {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
+}
