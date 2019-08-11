@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Common components
@@ -6,8 +6,10 @@ import NavBar from "./components/NavBar";
 import Main from "./components/Main";
 
 // Route-specific components
-import Intro from "./components/Intro";
-import Cowsay from "./components/Cowsay";
+// import Intro from "./components/Intro";
+const Intro = lazy(() => import("./components/Intro"));
+// import Cowsay from "./components/Cowsay";
+const Cowsay = lazy(() => import("./components/Cowsay"));
 
 function App() {
   return (
@@ -16,10 +18,14 @@ function App() {
       <Main>
         <Switch>
           <Route path="/cowsay">
-            <Cowsay />
+            <Suspense fallback={null}>
+              <Cowsay />
+            </Suspense>
           </Route>
           <Route path="/" exact={true}>
-            <Intro />
+            <Suspense fallback={null}>
+              <Intro />
+            </Suspense>
           </Route>
         </Switch>
       </Main>
