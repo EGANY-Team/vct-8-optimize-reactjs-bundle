@@ -20,8 +20,8 @@ Branch list:
 
 ```bash
 # Clone repo
-git clone
-cd
+git clone https://github.com/EGANY-Team/vct-8-optimize-reactjs-bundle
+cd vct-8-optimize-reactjs-bundle
 
 # Install packages
 npm install
